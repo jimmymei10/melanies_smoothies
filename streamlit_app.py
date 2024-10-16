@@ -41,3 +41,9 @@ time_to_insert = st.button('Submit Order')
 if time_to_insert:
     session.sql(my_insert_stmt).collect()
     st.success('Your Smoothie is ordered, '+name_on_order+'!', icon="✅")
+
+
+
+
+# New section to dispaly fruityvice nutrition information
+import requests
